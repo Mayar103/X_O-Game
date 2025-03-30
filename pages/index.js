@@ -60,7 +60,7 @@ export default function Home() {
         ))}
         </div>
           <h5 className="message">{message || "\u00A0"}</h5> 
-          {message && <button onClick={startGame} className="new_game">{'Play agian' || "\u00A0"}</button>} 
+          {message && <button onClick={startGame} className="new_game">{'Play again' || "\u00A0"}</button>} 
       </div>
        <div className="player_container">
          <h4 className={!message && go === 'circle' ? 'secondPlayer': ''}>Second Player</h4>
