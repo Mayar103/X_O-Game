@@ -1,0 +1,80 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.container {  
+  gap: 56px;
+}
+
+.container, .board_with_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cross, .circle , h4, h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cross, .circle {
+  font-weight: 800;
+  
+}
+
+.container:first-child {
+  font-size: 30px;
+}
+
+.cross, .circle {
+  font-size: 70px;
+}
+
+.main_board {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cross {
+  color: brown;
+}
+
+.player_container, .board_with_message {
+  display: flex;
+  flex-direction: column;
+}
+
+.player_container {
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
+.board_with_message {
+  gap: 16px;
+}
+
+.firstPlayer, .secondPlayer{
+  color: orange;
+}
+
+.message {
+  color: rgb(0, 144, 0);
+  margin-top: 10px; 
+}
