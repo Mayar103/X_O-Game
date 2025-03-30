@@ -17,6 +17,12 @@ export default function Home() {
     [2,4,6]
   ]
 
+  const startGame = () => {
+    setCells(['','','','','','','','','']);
+    setMessage('');
+    setGo('cross')
+  }
+
   useEffect(()=>{
     let winnerFound = false; 
 
@@ -51,9 +57,10 @@ export default function Home() {
          <div className="main_board">
          {cells.map((cell, index) => (
           <Cells key={index} id={index} cell={cell} cells={cells} setCells={setCells} go={go} setGo={setGo} message={message}/>
-      ))}
+        ))}
         </div>
           <h5 className="message">{message || "\u00A0"}</h5> 
+          {message && <button onClick={startGame} className="new_game">{'Play agian' || "\u00A0"}</button>} 
       </div>
        <div className="player_container">
          <h4 className={!message && go === 'circle' ? 'secondPlayer': ''}>Second Player</h4>
