@@ -6,6 +6,7 @@ export default function Home() {
   const [go, setGo] = useState('cross');
   const [message, setMessage] = useState('');
 
+  // All Possible Scenarios to Win the Game
   const winningScenarios = [
     [0,1,2],
     [3,4,5],
